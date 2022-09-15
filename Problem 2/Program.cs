@@ -4,7 +4,7 @@
 
 // [-4, -6, 89, 6] -> 0
 
-/// Я поняла это как "с нечетным индексом"
+/// Я поняла это как "Найдите сумму элементов с нечетным индексом"
 void FillArray(int[] array)
 {
     for(int i=0; i< array.Length; i++)
@@ -18,7 +18,5 @@ FillArray(array);
 System.Console.WriteLine("[{0}]",string.Join(", ", array));
 int Sum = 0;
 for(int i=1; i< array.Length; i=i+2)
-{
     Sum += array[i];
-}
 System.Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях {Sum}");
